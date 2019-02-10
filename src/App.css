@@ -21,7 +21,142 @@
 .App-link {
   color: #61dafb;
 }
-
+.landing-container,.login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-image: url('assets/Asset\ 1.png')
+}
+.landing-card,.login-card{
+  /* border: 1px solid black; */
+  height: 70vh;
+  width: 55vw;
+  position: relative;
+  background-image: url('assets/Asset\ 1.png');
+  /* Add the blur effect */
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+}
+.landing-card, .login-card, .signup-card{
+  -webkit-box-shadow: 0 -8px 16px 1px white, 8px 0 6px -6px white, -8px 0 6px -6px white;
+	   -moz-box-shadow: 0 -8px 16px 1px white, 8px 0 6px -6px white, -8px 0 6px -6px white;
+          box-shadow: 0 -8px 16px -8px white, 8px 0 6px -6px white, -8px 0 6px -6px white;
+          
+  /* box-shadow: 12px 0 15px -4px white, -12px 0 8px -4px white; */
+}
+.sign-up-wrapper,.log-in-wrapper,.onboarding-wrapper{
+  height: 86%;
+}
+.login-card{
+  background-color: white;
+}
+.landing-card button{
+  position: absolute;
+}
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.login-card .grid{
+  margin: 0 !important;
+}
+.love-button{
+  bottom: 10%;
+  left: 25%;
+}
+.hate-button{
+  bottom: 10%;
+  right: 25%;
+}
+.content-container{
+  height: 370px;
+  padding: 0px 50px 0px 50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.title-container{
+  /* padding-top: 25px; */
+}
+.title{
+  /* font-size: 45px; */
+  background-image: url('assets/Title.png');
+  height: 130px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content-text{
+  /* border: 1px solid blue; */
+  text-align:justify;
+  line-height: 10px;
+  text-align: justify;
+  padding-top: 35px;
+  line-height: 40px;
+  color: white;
+}
+.sign-in{
+  position: absolute;
+  top: 5%;
+  right: 15%;
+}
+.sign-in-button{
+  background-image: url('assets/loginSignup.png');
+  height: 50px;
+    width: 279px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 15%;
+    
+}
+.sign-in-form{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 15px;
+  
+}
+.login-card .message{
+  width: 50%;
+  /* margin: 0 auto !important; */
+  margin-top: 15px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.back-button{
+  margin-top: 30px ;
+  background: none ;
+  color: white ;
+  height: 20px;
+}
+/* .sign-in button{
+  border-radius: 20px;
+  height: 25px;
+  width: 70px;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none; 
+} */
+.sign-in button:focus {
+  outline: 0;
+}
+.signup-button{
+  margin-left: 10px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -29,4 +164,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+.error{
+  display: none;
 }
