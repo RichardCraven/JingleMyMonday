@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 
-class LandingPage extends Component{
+class WelcomeAboard extends Component{
     render(){
         return (
             <div className='landing-container'>
@@ -39,4 +39,4 @@ class LandingPage extends Component{
     }
 }
 
-export default LandingPage;
+export default WelcomeAboard;

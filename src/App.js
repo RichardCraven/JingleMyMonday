@@ -10,27 +10,19 @@ import SignUpPage from './SignUpPage';
 import OnboardingPage from './OnboardingPage';
 
 class App extends Component {
+  userId = 'fifty'
   render() {
     return (
       <div className="App">
         
-        <Route exact path='/' render={() => (
-          <LandingPage/>
-        
-        )} />
+        <Route exact path='/' component={LandingPage} />
         <Route path='/HowItWorks' render={({history}) => (
           <HowItWorks/>
           )}
         />
-        <Route exact path='/Login' render={() => (
-          <LoginPage/>
-        )} />
-        <Route exact path='/SignUp' render={() => (
-          <SignUpPage/>
-        )} />
-        <Route exact path='/onboarding' render={() => (
-          <OnboardingPage/>
-        )} />
+        <Route  path='/Login' component={LoginPage} />
+        <Route exact path='/SignUp' component={SignUpPage} />
+        <Route exact path='/onboarding' component={OnboardingPage} />
 
         {/* <Switch>
           <Route path="/Login" component={LoginPage}/>
